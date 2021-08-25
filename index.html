@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Baper Bank</title>
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<h1 class="pt-36 text-center text-5xl text-pink-800">
+				Baper Bank er Moneeeeeeey!
+			</h1>
+			<div class="grid grid-cols-3 h-44 gap-10 mt-28 mx-40">
+				<div class="bg-green-400 rounded-lg pt-10">
+					<h1 class="text-4xl px-10">Deposit</h1>
+					<h1 class="text-4xl p-10">$<span id="deposit-update">00</span></h1>
+				</div>
+				<div class="bg-blue-400 rounded-lg pt-10">
+					<h1 class="text-4xl px-10">Withdraw</h1>
+					<h1 class="text-4xl p-10">$<span id="withdraw-update">00</span></h1>
+				</div>
+				<div class="bg-yellow-400 rounded-lg pt-10">
+					<h1 class="text-4xl px-10">Balance</h1>
+					<h1 class="text-4xl p-10">$<span id="balance-update">1200</span></h1>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-2 gap-10 mx-40 mt-20">
+				<div class="bg-purple-200 rounded-lg pt-10">
+					<h1 class="text-4xl px-10 mb-5">Please Deposit</h1>
+					<input
+						id="deposit-value"
+						class="mx-10 p-2 rounded-lg"
+						type="text"
+						placeholder="$Deposit ammount"
+					/>
+
+					<div class="p-10">
+						<button id="deposit-button" class="p-5 rounded-lg bg-yellow-500 font-bold">
+							Deposit
+						</button>
+					</div>
+				</div>
+				<div class="bg-pink-200 rounded-lg pt-10">
+					<h1 class="text-4xl px-10 mb-5">Please Withdraw</h1>
+					<input
+						id="withdraw-value"
+						class="mx-10 p-2 rounded-lg"
+						type="text"
+						placeholder="$Withdraw ammount"
+					/>
+
+					<div class="p-10">
+						<button id="withdraw-button" class="p-5 rounded-lg bg-yellow-500 font-bold ">
+							Withdraw
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="main.js"></script>
+	</body>
+</html>
